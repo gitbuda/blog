@@ -43,7 +43,7 @@ The full Python script can be found
 
 ## Resources
 
-* https://www.python.org/download/releases/2.3/mro
-* https://www.geeksforgeeks.org/method-resolution-order-in-python-inheritance
-* https://medium.com/technology-nineleaps/python-method-resolution-order-4fd41d2fcc
-* https://makina-corpus.com/blog/metier/2014/python-tutorial-understanding-python-mro-class-search-path
+* <https://www.python.org/download/releases/2.3/mro>
+* <https://www.geeksforgeeks.org/method-resolution-order-in-python-inheritance>
+* <https://medium.com/technology-nineleaps/python-method-resolution-order-4fd41d2fcc>
+* <https://makina-corpus.com/blog/metier/2014/python-tutorial-understanding-python-mro-class-search-path>
