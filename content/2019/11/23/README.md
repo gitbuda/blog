@@ -7,35 +7,38 @@ post is to show options when it comes to calling methods from the base classes.
 
 If a class is extended from multiple classes like in the example below
 
-    #!python
-    class Base1():
-        def print(self):
-            print("Base1")
-            print(self)
+```python
+class Base1():
+    def print(self):
+        print("Base1")
+        print(self)
 
-    class Base2():
-        def print(self):
-            print("Base2")
-            print(self)
+class Base2():
+    def print(self):
+        print("Base2")
+        print(self)
+```
 
 both calls
 
-    #!python
-    class Derived(Base1, Base2):
-        def print(self):
-            # Calls Base1 method.
-            super().print()
-            # Calls Base1 method.
-            super(Derived, self).print()
+```python
+class Derived(Base1, Base2):
+    def print(self):
+        # Calls Base1 method.
+        super().print()
+        # Calls Base1 method.
+        super(Derived, self).print()
+```
 
 are going to call `print` method from `Base1` class.  If a caller wants to
 call the `print` method from `Base2` class, an explicit call is required.
 
-    #!python
-    class Derived(Base1, Base2):
-        def print(self):
-            # Calls Base2 method.
-            Base2.print(self)
+```python
+class Derived(Base1, Base2):
+    def print(self):
+        # Calls Base2 method.
+        Base2.print(self)
+```
 
 The full Python script can be found
 [here](https://github.com/gitbuda/blog/blob/master/content/2019/11/23/code/main.py).

@@ -16,12 +16,13 @@ types, it's still possible to assign an object of a class that implements e.g.
 is going to be copied to the `std::variant`. Take a look at the following
 example:
 
-    #!c++
-    struct Struct {
-      operator int() { return foo; }
-      int foo;
-    }
-    std::variant<int, float> bar = Struct();
+```c++
+struct Struct {
+  operator int() { return foo; }
+  int foo;
+}
+std::variant<int, float> bar = Struct();
+```
 
 You can find the full `std::variant` experimental code
 [here](https://github.com/gitbuda/education/blob/master/programming_languages/cpp/variant/main.cpp).
