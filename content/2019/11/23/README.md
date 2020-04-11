@@ -20,7 +20,7 @@ If a class is extended from multiple classes like in the example below
 
 both calls
 
-    :::python
+    #!python
     class Derived(Base1, Base2):
         def print(self):
             # Calls Base1 method.
@@ -31,7 +31,7 @@ both calls
 are going to call `print` method from `Base1` class.  If a caller wants to
 call the `print` method from `Base2` class, an explicit call is required.
 
-    :::python
+    #!python
     class Derived(Base1, Base2):
         def print(self):
             # Calls Base2 method.
